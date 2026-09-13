@@ -1,0 +1,25 @@
+[gd_resource type="Theme" load_steps=8 format=3]
+
+[ext_resource type="StyleBox" path="res://money_mint/ui/styles/button_green_disabled.tres" id="1_3p8h8"]
+[ext_resource type="StyleBox" path="res://money_mint/ui/styles/button_green_focus.tres" id="2_whm66"]
+[ext_resource type="StyleBox" path="res://money_mint/ui/styles/button_green_hover.tres" id="3_ig8d2"]
+[ext_resource type="StyleBox" path="res://money_mint/ui/styles/button_green_normal.tres" id="4_41mhc"]
+[ext_resource type="StyleBox" path="res://money_mint/ui/styles/button_green_pressed.tres" id="5_uroo1"]
+[ext_resource type="StyleBox" path="res://money_mint/ui/styles/panel_dark.tres" id="6_fju41"]
+[ext_resource type="FontFile" path="res://money_mint/fonts/DejaVuSans.ttf" id="7_baeb3"]
+
+[resource]
+default_font = ExtResource("7_baeb3")
+default_font_size = 16
+Button/colors/font_color = Color(1, 0.94902, 0.811765, 1)
+Button/colors/font_disabled_color = Color(0.819608, 0.843137, 0.796078, 1)
+Button/colors/font_hover_color = Color(1, 1, 1, 1)
+Button/styles/disabled = ExtResource("1_3p8h8")
+Button/styles/focus = ExtResource("2_whm66")
+Button/styles/hover = ExtResource("3_ig8d2")
+Button/styles/normal = ExtResource("4_41mhc")
+Button/styles/pressed = ExtResource("5_uroo1")
+HBoxContainer/constants/separation = 12
+Label/colors/font_color = Color(1, 0.94902, 0.811765, 1)
+PanelContainer/styles/panel = ExtResource("6_fju41")
+VBoxContainer/constants/separation = 10
