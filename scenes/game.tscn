@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://cbouwi3c2f3eq" path="res://scenes/game.gd" id="1_lnu2h"]
 [ext_resource type="Texture2D" uid="uid://cyx76e2fqik8a" path="res://assets/textures/backgrounds/mint.svg" id="1_uwrxv"]
-[ext_resource type="Texture2D" uid="uid://b3v2u46uokwb1" path="res://assets/textures/resources/currency/coin.png" id="2_yqjtg"]
+[ext_resource type="Texture2D" uid="uid://ubnyke1pwf4a" path="res://assets/textures/resources/currency/coin.png" id="2_yqjtg"]
 [ext_resource type="Texture2D" uid="uid://53mmbsdcjj0l" path="res://assets/textures/ui/svg/toggle/toggle_off_dark.svg" id="4_lbhrr"]
 
 [node name="Game" type="Node2D" unique_id=205300177]
@@ -19,6 +19,18 @@ anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
+[node name="coin_click" type="Button" parent="Click UI" unique_id=940690764]
+layout_mode = 0
+offset_left = 164.0
+offset_top = 185.0
+offset_right = 389.0
+offset_bottom = 429.0
+action_mode = 0
+icon = ExtResource("2_yqjtg")
+flat = true
+icon_alignment = 1
+expand_icon = true
+
 [node name="BoxContainer" type="BoxContainer" parent="Click UI" unique_id=1773482456]
 layout_mode = 0
 offset_right = 524.0
@@ -26,20 +38,7 @@ offset_bottom = 1080.0
 offset_transform_enabled = true
 offset_transform_position = Vector2(0, -100)
 alignment = 1
-
-[node name="TextureRect" type="TextureRect" parent="Click UI/BoxContainer" unique_id=619741145]
-layout_mode = 2
-texture = ExtResource("2_yqjtg")
-stretch_mode = 3
-
-[node name="coin_click" type="Button" parent="Click UI/BoxContainer/TextureRect" unique_id=940690764]
-layout_mode = 0
-offset_left = 35.0
-offset_top = 378.0
-offset_right = 197.0
-offset_bottom = 547.0
-toggle_mode = true
-action_mode = 0
+metadata/_edit_lock_ = true
 
 [node name="MoneyCount" type="Label" parent="Click UI" unique_id=784675620]
 layout_mode = 0
@@ -56,4 +55,4 @@ offset_bottom = 713.0
 action_mode = 0
 icon = ExtResource("4_lbhrr")
 
-[connection signal="pressed" from="Click UI/BoxContainer/TextureRect/coin_click" to="." method="_on_coin_click_pressed"]
+[connection signal="pressed" from="Click UI/coin_click" to="." method="_on_coin_click_pressed"]
